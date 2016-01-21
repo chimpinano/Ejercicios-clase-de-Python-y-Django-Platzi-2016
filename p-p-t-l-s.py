@@ -28,7 +28,7 @@ while (pc_puntos < 10 and user_puntos < 10):
     sleep(0.5)
     print (("""Elegiste {}\nComputadora eligio {}\nAsi que:""").format(x, pc))
     if x == pc:
-        print '\n Es un Empate...'
+        print '\n Es un Empate...\n'
     elif x == 'piedra' and pc == 'tijera':
         user_puntos = user_puntos + 1
         print "\n Ganaste! Como es habitual... la piedra aplasta las tijeras."
