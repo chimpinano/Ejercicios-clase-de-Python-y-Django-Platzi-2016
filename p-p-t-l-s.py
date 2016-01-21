@@ -14,7 +14,7 @@ while (pc_puntos < 10 and user_puntos < 10):
     pc = random.choice(depo)
     sleep(0.5)
     if x in depo:
-        print (("""\nElegiste {}\nComputadora eligio {}\nAsi que:""").format(x, pc))
+        print (("\nElegiste {}\nComputadora eligio {}\nAsi que:").format(x, pc))
     elif x not in depo and x != "marcador":
         print "\nEscribe un valor correcto!\nPierdes un punto"
     if x == pc:
