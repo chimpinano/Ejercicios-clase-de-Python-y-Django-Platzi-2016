@@ -61,4 +61,3 @@ if pc_puntos == 10:
     print "La computadora!\nGracias por jugar!"
 else:
     print "Tu!\nGracias por jugar!\nVuelve Pronto!"
-    
