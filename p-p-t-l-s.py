@@ -3,7 +3,6 @@
 import time
 from time import sleep
 import random
-
 depo, sus, tab, user_puntos, pc_puntos = ["piedra", "papel", "tijera", "lagarto", "spock"], "-" * 35, " " * 4, 0, 0
 print """
     Hola! Bienvenido al juego Piedra Papel Tijera Lagarto Spock!\nEstas son las reglas:\n Las tijeras cortan el papel\n El papel cubre a la piedra\n La piedra aplasta al lagarto\n El lagarto envenena a Spock\n Spock destroza las tijeras\n Las tijeras decapitan al lagarto\n El lagarto se come el papel\n El papel refuta a Spock\n Spock vaporiza la piedra\n Y como es habitual... la piedra aplasta las tijeras.\nEl primero en llegar a 10 puntos gana!
@@ -53,10 +52,7 @@ while (pc_puntos < 10 and user_puntos < 10):
     else:
         pc_puntos = pc_puntos + 1
         print "\n Lo siento, perdiste: {} le gana a {} \n{}\nPierdes un punto...\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(pc, x, sus, user_puntos, pc_puntos)
-print """
-Acabo el juego...
-El ganador es...
-""", sleep(2)
+print "Acabo el juego...\nEl ganador es...\n ", sleep(2)
 if pc_puntos == 10:
     print "La computadora!\nGracias por jugar!"
 else:
