@@ -4,12 +4,7 @@ import time
 from time import sleep
 import random
 
-pc_puntos = 0
-user_puntos = 0
-sus = "-" * 35
-tab = " " * 4
-depo = ["piedra", "papel", "tijera", "lagarto", "spock"]
-
+depo, sus, tab, user_puntos, pc_puntos = ["piedra", "papel", "tijera", "lagarto", "spock"], "-" * 35, " " * 4, 0, 0
 print """
     Hola! Bienvenido al juego Piedra Papel Tijera Lagarto Spock!\nEstas son las reglas:\n Las tijeras cortan el papel\n El papel cubre a la piedra\n La piedra aplasta al lagarto\n El lagarto envenena a Spock\n Spock destroza las tijeras\n Las tijeras decapitan al lagarto\n El lagarto se come el papel\n El papel refuta a Spock\n Spock vaporiza la piedra\n Y como es habitual... la piedra aplasta las tijeras.\nEl primero en llegar a 10 puntos gana!
 """
@@ -17,14 +12,13 @@ sleep(2)
 print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
 sleep(1)
 while (pc_puntos < 10 and user_puntos < 10):
-    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto o Spock:\n(Control + C para salir)\n(Escribe en minusculas)\n" + tab)
-    if x not in depo:
-        print("No hagas trampa!!!\nEscribe una de las opciones!!!!\n")
-        continue
-
+    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto o Spock:\n('marcador' para ver los puntos)(Control + C para salir)\n(Escribe en minusculas)\n" + tab)
+    if x not in depo and x != "marcador":
+        print "\nEscribe un valor correcto!\n"
     pc = random.choice(depo)
     sleep(0.5)
-    print (("""Elegiste {}\nComputadora eligio {}\nAsi que:""").format(x, pc))
+    if x in depo:
+        print (("""Elegiste {}\nComputadora eligio {}\nAsi que:""").format(x, pc))
     if x == pc:
         print '\n Es un Empate...\n'
     elif x == 'piedra' and pc == 'tijera':
@@ -57,6 +51,9 @@ while (pc_puntos < 10 and user_puntos < 10):
     elif x == 'spock' and pc == 'piedra':
         user_puntos = user_puntos + 1
         print "\n Ganaste! Spock vaporiza la piedra\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+    if x == "marcador" and pc == pc:
+        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        sleep(0.5)
     else:
         pc_puntos = pc_puntos + 1
         print "\n Lo siento, perdiste: {} le gana a {} \n{}\nPierdes un punto...\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(pc, x, sus, user_puntos, pc_puntos)
@@ -66,7 +63,6 @@ El ganador es...
 """
 sleep(2)
 if pc_puntos == 10:
-    print "La computadora!"
+    print "La computadora!\nGracias por jugar!"
 else:
-    print "Tu!"
-print "Gracias por jugar!"
+    print "Tu!\nGracias por jugar!"
