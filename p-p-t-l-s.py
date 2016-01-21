@@ -38,16 +38,4 @@ while True:
     elif x == 'Spock' and pc == 'piedra':
         print "\n Ganaste! Spock vaporiza la piedra"
     else:
-        print "\n Perdiste. {} le gana a {} \n{}".format(pc, x, sus)
-
-        print "\n Ganaste"
-    elif x == 'tijera' and pc == 'lagarto':
-        print "\n Ganaste"
-    elif x == 'lagarto' and pc == 'papel':
-        print "\n Ganaste"
-    elif x == 'papel' and pc == 'Spock':
-        print "\n Ganaste"
-    elif x == 'Spock' and pc == 'piedra':
-        print "\n Ganaste"
-    else:
         print "\n Perdiste. {} gana {} \n{}".format(pc, x, sus)
