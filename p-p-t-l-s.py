@@ -11,9 +11,7 @@ tab = " " * 4
 depo = ["piedra", "papel", "tijera", "lagarto", "spock"]
 
 print """
-    Hola! Bienvenido al juego Piedra Papel Tijera Lagarto Spock!
-    Estas son las reglas:\n Las tijeras cortan el papel\n El papel cubre a la piedra\n La piedra aplasta al lagarto\n El lagarto envenena a Spock\n Spock destroza las tijeras\n Las tijeras decapitan al lagarto\n El lagarto se come el papel\n El papel refuta a Spock\n Spock vaporiza la piedra\n Y como es habitual... la piedra aplasta las tijeras.\n
-    El primero en llegar a 10 puntos gana!
+    Hola! Bienvenido al juego Piedra Papel Tijera Lagarto Spock!\nEstas son las reglas:\n Las tijeras cortan el papel\n El papel cubre a la piedra\n La piedra aplasta al lagarto\n El lagarto envenena a Spock\n Spock destroza las tijeras\n Las tijeras decapitan al lagarto\n El lagarto se come el papel\n El papel refuta a Spock\n Spock vaporiza la piedra\n Y como es habitual... la piedra aplasta las tijeras.\nEl primero en llegar a 10 puntos gana!
 """
 sleep(2)
 print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
@@ -31,60 +29,37 @@ while (pc_puntos < 10 and user_puntos < 10):
         print '\n Es un Empate...\n'
     elif x == 'piedra' and pc == 'tijera':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Como es habitual... la piedra aplasta las tijeras."
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Como es habitual... la piedra aplasta las tijeras.\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'papel' and pc == 'piedra':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Papel cubre a la piedra"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Papel cubre a la piedra\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'tijera' and pc == 'papel':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Tijeras cortan el papel"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Tijeras cortan el papel\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'piedra' and pc == 'lagarto':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! La piedra aplasta al lagarto"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! La piedra aplasta al lagarto\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'lagarto' and pc == 'spock':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Lagarto envenena Spock"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Lagarto envenena Spock\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'spock' and pc == 'tijera':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Spock destroza las tijeras"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Spock destroza las tijeras\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'tijera' and pc == 'lagarto':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Las tijeras decapitan al lagarto"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Las tijeras decapitan al lagarto\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'lagarto' and pc == 'papel':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! El lagarto se come el papel"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! El lagarto se come el papel\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'papel' and pc == 'spock':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! El papel refuta a Spock"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! El papel refuta a Spock\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     elif x == 'spock' and pc == 'piedra':
         user_puntos = user_puntos + 1
-        print "\n Ganaste! Spock vaporiza la piedra"
-        print "Ganas un punto!!!"
-        print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
+        print "\n Ganaste! Spock vaporiza la piedra\nGanas un punto!!!\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
     else:
         pc_puntos = pc_puntos + 1
-        print "\n Lo siento, perdiste: {} le gana a {} \n{}".format(pc, x, sus)
-        print "Pierdes un punto..."
-        print "Tus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
-
+        print "\n Lo siento, perdiste: {} le gana a {} \n{}\nPierdes un punto...\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(pc, x, sus, user_puntos, pc_puntos)
 print """
 Acabo el juego...
 El ganador es...
@@ -94,5 +69,4 @@ if pc_puntos == 10:
     print "La computadora!"
 else:
     print "Tu!"
-
 print "Gracias por jugar!"
