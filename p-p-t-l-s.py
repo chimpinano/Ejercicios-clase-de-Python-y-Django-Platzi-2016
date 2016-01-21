@@ -4,20 +4,19 @@ import time
 from time import sleep
 import random
 depo, sus, tab, user_puntos, pc_puntos = ["piedra", "papel", "tijera", "lagarto", "spock"], "-" * 35, " " * 4, 0, 0
-print """
-    Hola! Bienvenido al juego Piedra Papel Tijera Lagarto Spock!\nEstas son las reglas:\n Las tijeras cortan el papel\n El papel cubre a la piedra\n La piedra aplasta al lagarto\n El lagarto envenena a Spock\n Spock destroza las tijeras\n Las tijeras decapitan al lagarto\n El lagarto se come el papel\n El papel refuta a Spock\n Spock vaporiza la piedra\n Y como es habitual... la piedra aplasta las tijeras.\nRecuerda que si escribes algun valor incorrecto pierdes un punto!\nEl primero en llegar a 10 puntos gana!
+print """Hola! Bienvenido al juego Piedra Papel Tijera Lagarto Spock!\nEstas son las reglas:\n Las tijeras cortan el papel\n El papel cubre a la piedra\n La piedra aplasta al lagarto\n El lagarto envenena a Spock\n Spock destroza las tijeras\n Las tijeras decapitan al lagarto\n El lagarto se come el papel\n El papel refuta a Spock\n Spock vaporiza la piedra\n Y como es habitual... la piedra aplasta las tijeras.\nRecuerda que si escribes algun valor incorrecto pierdes un punto!\nEl primero en llegar a 10 puntos gana!
 """
 sleep(2)
 print "\nTus puntos son:{}\nY los puntos de la pc son:{}\n".format(user_puntos, pc_puntos)
 sleep(1)
 while (pc_puntos < 10 and user_puntos < 10):
-    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto o Spock:\n('marcador' para ver los puntos)(Control + C para salir)\n(Escribe en minusculas)\n" + tab)
-    if x not in depo and x != "marcador":
-        print "\nEscribe un valor correcto!\n"
+    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto o Spock:\n('marcador' para ver los puntos)(Control + C para salir)\n\n(Escribe en minusculas)" + tab)
     pc = random.choice(depo)
     sleep(0.5)
     if x in depo:
-        print (("""Elegiste {}\nComputadora eligio {}\nAsi que:""").format(x, pc))
+        print (("""\nElegiste {}\nComputadora eligio {}\nAsi que:""").format(x, pc))
+    elif x not in depo and x != "marcador":
+        print "\nEscribe un valor correcto!\nPierdes un punto"
     if x == pc:
         print '\n Es un Empate...\n'
     elif x == 'piedra' and pc == 'tijera':
@@ -62,3 +61,4 @@ if pc_puntos == 10:
     print "La computadora!\nGracias por jugar!"
 else:
     print "Tu!\nGracias por jugar!\nVuelve Pronto!"
+    
