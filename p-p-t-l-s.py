@@ -56,4 +56,4 @@ print "Acabo el juego...\nEl ganador es...\n ", sleep(2)
 if pc_puntos == 10:
     print "La computadora!\nGracias por jugar!"
 else:
-    print "Tu!\nGracias por jugar!"
+    print "Tu!\nGracias por jugar!\nVuelve Pronto!"
