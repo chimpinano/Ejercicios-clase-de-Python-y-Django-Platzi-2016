@@ -8,7 +8,7 @@ sus = "-" * 35
 tab = " " * 4
 depo = ["piedra", "papel", "tijera", "lagarto", "spock"]
 while True:
-    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto, Spock:\n(Escribe en minusculas)\n(Control + C para salir)\n" + tab)
+    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto, Spock:\n(Control + C para salir)\n(Escribe en minusculas)\n" + tab)
     if x not in depo:
         print("No hagas trampa!!!")
         continue
