@@ -5,9 +5,10 @@ from time import sleep
 import random
 
 sus = "-" * 35
+tab = " " * 4
 depo = ["piedra", "papel", "tijera", "lagarto", "spock"]
 while True:
-    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto, Spock: (Escribe en minusculas)\n")
+    x = raw_input("Que eliges? Piedra, papel, tijera, lagarto, Spock:\n(Escribe en minusculas)\n(Control + C para salir)\n" + tab)
     if x not in depo:
         print("No hagas trampa!!!")
         continue
