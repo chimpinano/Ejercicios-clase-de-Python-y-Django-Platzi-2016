@@ -18,16 +18,28 @@ while True:
     if x == pc:
         print '\n Empate.'
     elif x == 'piedra' and pc == 'tijera':
-        print "\n Ganaste"
+        print "\n Ganaste! Como es habitual… la piedra aplasta las tijeras."
     elif x == 'papel' and pc == 'piedra':
-            print "\n Ganaste"
+            print "\n Ganaste! Papel cubre a la piedra"
     elif x == 'tijera' and pc == 'papel':
-        print "\n Ganaste"
+        print "\n Ganaste! Tijeras cortan el papel"
     elif x == 'piedra' and pc == 'lagarto':
-        print "\n Ganaste"
+        print "\n Ganaste! La piedra aplasta al lagarto"
     elif x == 'lagarto' and pc == 'Spock':
-        print "\n Ganaste"
+        print "\n Ganaste! Lagarto envenena Spock"
     elif x == 'Spock' and pc == 'tijera':
+        print "\n Ganaste! Spock destroza las tijeras"
+    elif x == 'tijera' and pc == 'lagarto':
+        print "\n Ganaste! Las tijeras decapitan al lagarto"
+    elif x == 'lagarto' and pc == 'papel':
+        print "\n Ganaste! El lagarto se come el papel"
+    elif x == 'papel' and pc == 'Spock':
+        print "\n Ganaste! El papel refuta a Spock"
+    elif x == 'Spock' and pc == 'piedra':
+        print "\n Ganaste! Spock vaporiza la piedra"
+    else:
+        print "\n Perdiste. {} gana {} \n{}".format(pc, x, sus)
+
         print "\n Ganaste"
     elif x == 'tijera' and pc == 'lagarto':
         print "\n Ganaste"
