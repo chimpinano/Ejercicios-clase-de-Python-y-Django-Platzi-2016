@@ -1,7 +1,8 @@
 import string
 import random
 
-
+# fo = File-Open  
+# Se puede cambiar el nombre
 fo = open("foo.txt", "wb")
 fo.write("Python es el mejor lenguaje.\nEs genial!!\n")
 for i in range(100):
