@@ -11,3 +11,5 @@ Explicacion Django:
 Piedra Papel Tijera Lagarto Spock:
   
    https://static.platzi.com/media/public/uploads/56a04685d4029259590a4206.png
+
+  https://static.platzi.com/media/public/uploads/56a12a99d4029259590a4209.jpeg
