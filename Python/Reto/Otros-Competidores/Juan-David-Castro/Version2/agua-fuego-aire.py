@@ -44,7 +44,7 @@ sleep(2)
 while (pc_puntos < 10 and user_puntos < 10):
     sleep(1)
     
-    user_elec = raw_input("\n\nUn, dos, Tres! Piedra papel tijera lagarto Spock\n\n" + user + ":" + tab).lower()
+    user_elec = raw_input("\n\nUn, dos, Tres! Piedra papel tijera agua fuego aire esponja!\n\n" + user + ":" + tab).lower()
     pc = random.choice(newdict.keys())
     
     sleep(0.2)
