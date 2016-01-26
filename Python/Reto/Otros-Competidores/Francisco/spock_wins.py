@@ -63,4 +63,4 @@ while jugador and villano :
 if villano == 0:
     print("\nSHIT! Me has ganado, seguro has usado algún hack...")
 else:
-    print("\nJajaja! Perdiste! No te preocupes, es normal, las máquinas somos mejores.")
+    print("\nJajajaja! Perdiste! No te preocupes, es normal, las máquinas somos mejores.")
